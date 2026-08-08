@@ -1,0 +1,427 @@
+curso de editora do senai, Livro de java 
+
+Variavel, guarda uma informaçãõ
+
+ex:
+
+nome = josé
+
+idade = 22 
+
+preço = 100.99
+
+qualquer palavra fica entre (" ")
+
+sempre começar variavel com letra, 
+nunca com número, letra minuscula e as proximas sem espaços
+com letra maiuscula em cade primeira letra.
+
+
+Não usamos acento
+
+camelCase usamos esse sistema para nomear variavel
+
+na programação java, quando eu definir um valor como idade, não posso
+mudar o valor como "quinze".
+
+Tipos Primitivos em Java
+
+são separados pela caácidade de armazenamento
+
+byte: ocupa 8 bits, com valores variando de -128 a 127. Ideal para valores pequenos que economizam
+memória, como IDs ou indicadores.
+
+ex byte temperaturaMarte = -60
+
+short : Armazena um numero inteiro de 16bits, com valores variando de 32.768 a 32.767
+
+sempre que for criar um dado precisa por o tipo da variavel
+
+int : Armazena um numero inteiro de 32 bits 
+
+ex int temperaturaSol = 15000000000 // 15 000.000.000
+
+long: armazena um numero inteiro de 64 bits, com valores variando de 9.223.372.......
+usando valores inteiros extremamente grandes que não cabe em tipos menores.
+
+float: Armazena um numero de ponto flutuante de 32 bits, de acordo com o padrão
+IEEE 754
+
+ex: float num1 = (float) 12.3456789 // conversão para float (cast)
+
+vamos utilizar
+
+int numeros inteiros
+double : para numeros decimais.
+
+char: Armazena um único caractere Unicode de 16 bits. representa letras, números e outros simbolos usados em strings.
+
+ex: char sexo- 'm' // tipo para devemos usar  ' não "
+
+para armazenar texto vamos usar um tipo de objeto
+
+vamos usar String nome = "josé roberto"
+
+integer: vai criar um numero inteiro como objeto
+
+ou  Double preço = 10000
+
+tipos primitivos são armazenados na MEMERIA RAM, os não são armazenados na memória cache que ficam mais perto do processador, mas não tem a mesma capacidade.
+
+quando da um comando primitivo com letra minuscula e uma variavel
+quando da um comando com letra maiscula é com objeto
+
+usando o JOPtion n funciona int, então precisa usar Double.parseDouble();
+
+a variavel aritmetica pode ser simplificada 
+
+ao inves de usar 
+
+	numero = numero + 1 ;
+
+usamos 
+	numero+= 1 ;
+
+agora para simplificar mais, quando queremos somar +1
+
+	numero++;
+
+Operador de comparação
+
+> maior que 
+
+	idade >18 - 19.....
+
+	>= maior ou igual 
+		idade >= 18 - 18.....
+< menor que 
+
+	idade <18 - 18 ....
+	<= menor ou iual 
+
+
+
+
+media >= 4 &&
+
+	media < 6 &&
+	falta <= 5
+
+media= 5
+faltas= 8
+
+vai ferificar se a media é maior que 4 e igual a 6
+
+&& é E
+
+II é ou
+
+! é não (ex: gostaria de todos, menos cariocas, ai tira)
+
+
+(La + Lb) <c e 
+(Lc + Lb) <a e isoceles
+(la + lc) <b e scaleno
+
+/////////
+
+la==lb e la ==lc e 
+la==lb e lb==lc
+la!=lb e lb!=lc e 
+la!lc
+
+switch
+ 
+case executa alguma coisa
+	break
+case 2 executa alguma coisa
+	break
+case3 executa alguma coisa
+	break
+case "a" executa alguma coisa
+	break;
+default:
+	executa alguma coisa
+
+ em menus é muito utilizado 
+
+case testa um por um o IF assim que ele encontra opt2
+ele pula para o final
+
+break vai aparecer em aluns casos ou não para 
+exectar todas as opções. Caso não coloque ele vai
+rodas todos os "case"
+
+classe substring serve para classes 
+
+final 
+
+então sua data de nascimento é 05 de junho de 2000
+
+comando 
+
+while (i < 10) { 
+- 
+-
+- 	// enquanto I for menor que 10 ele não para
+-
+-
+i = 11
+
+
+ex
+
+package aula04b;
+import javax.swing.JOptionPane;
+
+public class Aula04b {
+    
+    public static void main(String[] args) {
+        int contador = 1;
+        
+        while (contador <=10) {
+            System.out.println ("Contador: " + contador);
+            contador+ 1;
+ 
+tomar o cuidado de contar quantas notas o professor está criando
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ 
+o comando DO diferente do while em caso de false ele n n roda o código
+
+tipo enquanto isso faça isso
+
+//////////////////////////////////////
+
+estrutura for 
+
+usamos while assim 
+
+int contador = 1
+///////////////////////////////////////////
+o que  
+
+
+for (int i = 0; i <= 20; i++){
+            
+            if (i % 2 !=0){
+                continue;
+
+faz
+
+se o i dividido por 2 for diferente de 0
+continue
+
+e ai vai para p proximo no caso i seria 0 primeiro
+depois seria 1 
+
+até sobrar 20
+
+////////////////////////////////////////////////
+array []
+
+serve para n ter que criar todos essas variaveis
+
+aluno1 = gaspar"
+aluno2 = isabela"
+aluno3 = luiza"
+aluno4 = jorge"
+aluno5 = "bruce"
+
+Com array seria
+
+aluno[]= { "gaspar","isabela","luiza",...
+
+ai no caso gaspar seria 0, isabela 1, luiza 3 .....
+
+
+não pode criar array com tipos diferentes
+////////////////////////////////////////////
+for (int i = 0; i<alunos.length)
+
+
+ vai trazer o 4 ,length  vai dizer quantas elemetos
+tem numa array
+
+////////////////////////////////////////////
+
+array bi-dimencional
+
+int[] numeros ;
+	new int [4];
+numeros[0] = 5
+numeros[1] = 10
+numeros[2] = 15
+numeros[3] = 20
+
+	colunas
+  	0  1  2  3
+linhas	0 5 10  15 20
+	1 3  9  18 21
+	2 2  4   6  8  é uma matriz
+
+int [][] numeros = new int [3][4];
+numeros[0][0] = 5
+numeros[0][1] = 10
+numeros[0][2] = 15
+
+/////////////////////////////////////////////////////
+
+erro dividir por 0 
+
+
+/////////////////////////////////////////////////////
+
+Função * em python é método em Java
+
+para orientação voltada a objetos
+e para 
+
+4 metodos 		parametro (informação dentro dos parenteses)
+
+sem parametros
+sem retorno
+
+com parametros
+sem retorno 
+ 
+sem parametros
+com retorno
+
+com parametros 
+com retorno
+/////////////////////////////////////////////////////////////
+
+uma constante não pode ser alterada durante todo o código
+
+//////////////////////////////////////////////////////////////
+
+Programação orientada a objetos
+
+POO pensamos em classes como se fossem as propriedades e comportamentos que esses objetos terão
+
+classe vai definir propriedades e metodos, definem e espeificam
+
+ex carro mesma planta baixa mas com especificações
+
+uma classe em java possui
+
+modificadores de Acesso: definem o nível de visibilidade dos membros
+da classe(public,privado,protegido).
+
+ex: public carro
+	String nome: 
+	public void frear()
+
+private Animal:
+	int idade
+	public void comer() 
+
+nome da Classe:
+
+Atributos
+
+métodos:
+
+construtores:
+
+
+instanciar
+Carro carro = new Carro() ja recebe nome e a propriedade frear
+
+Herança: Ela facilita o recurso de código e promove a organização, pois voce pode criar 
+classes mais especificas a partir de classes mais genéricas.
+
+ex:
+
+pessoafisica
+
+nome
+endereço
+telefone
+cpf
+
+
+encapsulamento
+
+empacotar dados(propriedades) e métodos juntos dentro de uma classe
+controlando o acesso a esses elementos de outras partes do programa.
+
+O encapsulamnto protege os dados (propriedades) dos objetos, controlando o acesso a eles por meio
+dos métodos. Imagine uma caixa lacrada: os dados dentro da caixa (prpriedades) só podem
+ser acessados e modificados pelos métodos da caixa
+
+
+polimorfismo
+
+A capacidade de objetos de diferentes classes responderem ao mesmo 
+método de formas diferentes
+
+Abstração (Não tem atributos)
+
+public ligar();
+
+public desligar();
+
+caso não tenha ligar e desligar não cria
+
+como se fosse metodos especificos que 
+caso não tenham na classe ela não cria
+
+
+
+
+Crie a classe Professor com os atributos diciplina(String) e salario(double). Essa classe deve extender(herdar) a classe Pessoa. 
+Crie o construtor com a sobrecarga de Pessoa (super)
+Crie o método registrarDisciplina() que exiba em um JOptionPane a mensagem: 'nome', está registrado na disciplina 'disciplina'
+Crie o método exibirDados() sobrepondo o mesmo método da classe Pessoa (não esqueça do @Override)
+Crie um professor na classe com o método principal
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+private para protejer os nossos atributos da classe
+
+set é oq define e o get é oq mostra
+////////////////////////////////////////////////////////////////
+
+sobre carga são metodos diferentes mas com funções diferentes
+
+so polimorfismo eu posso criar 2 atributos igual desde que sejam de nomes diferentes
+
+quando voce tem um metodo na classe mãe e voce chama ele e muda na classe 
+filha isso é polimorfismo, não é herança.
+
+////////////////////////////////////////////////////////////////
+
+interface 
+
+ela é uma classe, mas nela eu só vou colocar as assinaturas dos metodos,
+então vai vai ter regras, codigos, calculos...
+
+ex     void processarPagamento(double valor);
+    	void emitirRecibo();
+	
+
+ai na classe vai ter que definir o codigo desse metodo, 
+
+é uma maneira de se policiar para que voce não esqueça disso.
+só vai funcionar se criar esse metodos
+// se der erro no Override o nome do metodo está diferente que na interface 
+// se voce estiver puxando o metodo de uma interface ou uma classe superior,´precisa do override
+//////////////////////////////////////////////////////////////////
+
+abstração
+
+ela vai ter metodos abstratos, só vai ter assinaturas, parece uma interface
+
+////////////////////////////////////////////////////////////////////
+
+
+jdk zulu
+
+java version, colocar a mesma versão que está instalado
+
+
+
