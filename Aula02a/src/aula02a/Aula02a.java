@@ -13,13 +13,13 @@ public class Aula02a {
         long distanciaEstrelas = 9_460_000_000_000L;
         
         
-        // tipos primitivos de ponto flutuante (decimais)
+        // Tipos primitivos de ponto flutuante (decimais)
         float precoGasolina = 6.49f;
         double pi = 3.14159265359;
         double salario;
         salario = 5000.00;
         
-        //tipo primitivo de dados caractere
+        //Tipo primitivo de dados caractere
         char nota = 'A';
         
         //Tipo primitivo de dado booleano
@@ -30,8 +30,8 @@ public class Aula02a {
         
         String nomeCompleto = "Jose Roberto Benevenuto Lemos";
         
-        //exibindo as variaveis no console 
-        System.out.println("=".repeat(50));
+        //Exibindo as variaveis no console 
+        System.out.println("=" .repeat(50));
         System.out.println("Idade:" + idade);
         System.out.println("Populacao de Guaruhos: " + populacaoDaCidade);
         System.out.println("Distancia das estrelas: " + distanciaEstrelas + "km.");
